@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css Grid tutorial</title>
+	<style type="text/css">
+		.continer{
+			width: 700px;
+			margin: 50px auto 0;
+
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: repeat(2,200px);
+			grid-gap: 5px;
+		}
+		.item-1{background-color: yellow;}
+		.item-2{background-color: green;}
+		.item-3{background-color: blue;
+		        display: grid;color: red;
+		      grid-template-columns: 1fr 1fr;
+		      grid-gap: 5px;
+		      padding: 5px;}
+		.item-3 > div{
+			background-color: lightgray;
+		}	   
+		.item-4{background-color: red;}
+	</style>
+</head>
+<body>
+	<div class="continer">
+		<div class="item-1">one</div>
+		<div class="item-2">two</div>
+		<div class="item-3">
+			<div class="subitem-1">A</div>
+			<div class="subitem-2">B</div>
+			<div class="subitem-3">C</div>
+		</div>
+		<div class="item-4">four</div>
+	</div>
+</body
